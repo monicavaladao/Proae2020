@@ -1,29 +1,29 @@
 function [autoval] = autovalores_matriz(A)
-% AUTOVALORES_MATRIZ: FunÁ„o que retorna os autovalores da matriz A.
+% AUTOVALORES_MATRIZ: Fun√ß√£o que retorna os autovalores da matriz A.
 % Entrada:
 %   A: Matriz de ordem nxn.
-% SaÌda:
+% Sa√≠da:
 %   autoval: Vetor com os autovalores da matriz A.
 % Exemplo:
 %   [autoval] = autovalores_matriz([-3,1,-1;-7,5,-1;-6,6,-2])
 %==========================================================================
-% Projeto Proae: ElaboraÁ„o de Material Did·tico que Empregue o uso de 
-%   Software como Suporte para o Aprendizado de ¡lgebra Linear.
+% Projeto Proae: Elabora√ß√£o de Material Did√°tico que Empregue o uso de 
+%   Software como Suporte para o Aprendizado de √Ålgebra Linear.
 % Membros do Projeto:
-%   MÙnica Aparecida Cruvinel Valad„o (Coordenadora)
-%   Douglas Frederico Guimar„es  Santiago (Vice-Coordenador)
+%   M√¥nica Aparecida Cruvinel Valad√£o (Coordenadora)
+%   Douglas Frederico Guimar√£es  Santiago (Vice-Coordenador)
 %   Anderson Luiz Pedrosa Porto (Colaborador)
 %   Flaviano Luiz Benfica (Bolsista)
 %==========================================================================
 % Calcula a ordem da matriz A
 [m,n] = size(A);
 
-% Verifica a condiÁ„o para calcular o determinante
+% Verifica a condi√ß√£o para calcular o determinante
 if m == n
     % Calcula os autovalores da matriz A
     autoval = eig(A);
 else
-    fprintf('A matriz n„o È quadrada!!!');
+    fprintf('A matriz n√£o √© quadrada!!!\n');
     autoval = [];
 end
 
