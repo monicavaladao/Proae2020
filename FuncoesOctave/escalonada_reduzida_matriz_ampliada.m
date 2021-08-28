@@ -41,7 +41,7 @@ if m_C == m_B
         E = [];
     end 
 else
-    fprintf('Verifique as ordens as matrizes!!!')
+    fprintf('Verifique as ordens as matrizes!!!\n')
     A = [];
     E = [];
 end
