@@ -4,7 +4,7 @@ function [C] = subtracao_matrizes(A,B)
 % A: Matriz de ordem mxn.
 % B: Matriz de ordem mxn.
 % Saída:
-% C: Matriz C = A+B de ordem mxn.
+% C: Matriz C = A-B de ordem mxn.
 % Exemplo:
 %   [C] = subtracao_matrizes([1,2,3;4,5,6],[3,2,1;9,8,7])
 %==========================================================================
