@@ -10,6 +10,11 @@ function [A,E] = escalonada_reduzida_matriz_ampliada(C,B)
 % Exemplo:
 %   [A,E] = escalonada_reduzida_matriz_ampliada([3,2,-5;2,-4,-2;1,-2,-3],[8;-4;-4])
 %==========================================================================
+% Importante: O uso dessa função para encontrar a forma escalonada reduzida possui um
+% caráter mais acadêmico. Com o uso da função rref()podem ocorrer erros numérios.
+% Dependendo da tolerância tol estabelecida para rref(), tem-se resultados 
+% diferentes. 
+%==========================================================================
 % Projeto Proae: Elaboração de Material Didático que Empregue o uso de 
 %   Software como Suporte para o Aprendizado de Álgebra Linear.
 % Membros do Projeto:
