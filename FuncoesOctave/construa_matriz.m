@@ -1,28 +1,28 @@
 function [A] = construa_matriz(regra_ii,regra_ij,m,n)
-% CONSTRUA_MATRIz: FunÁ„o que retorna a matriz A de ordem mxn
-% correspondente a definiÁ„o fornecida pelas entradas da funÁ„o.
+% CONSTRUA_MATRIZ: Fun√ß√£o que retorna a matriz A de ordem mxn
+% correspondente a defini√ß√£o fornecida pelas entradas da fun√ß√£o.
 % Entrada:
-%   regra_ii: Regra associada a condiÁ„o i=j, sendo que i,j representam,
+%   regra_ii: Regra associada a condi√ß√£o i=j, sendo que i,j representam,
 %   respectivamente, linha e coluna de A. Essa regra deve ser inserida na
 %   forma de @(i,j)().
-%   regra_ij: Regra associada a condiÁ„o i~=j, sendo que i,j representam,
+%   regra_ij: Regra associada a condi√ß√£o i~=j, sendo que i,j representam,
 %   respectivamente, linha e coluna de A. Essa regra deve ser inserida na
 %   forma de @(i,j)().
-%   m: N˙mero de linhas de A.
-%   n: N˙mero de colunas de A.
-% SaÌda:
+%   m: N√∫mero de linhas de A.
+%   n: N√∫mero de colunas de A.
+% Sa√≠da:
 %   A: Matriz A de ordem mxn
 % Exemplo: 
-%   Duas condiÁıes para os Ìndices
+%   Duas condi√ß√µes para os √≠ndices
 %       [A] = construa_matriz(@(i,j)(i - j),@(i,j)(i),4,7)
-%   Apenas uma condiÁ„o para os Ìndices
+%   Apenas uma condi√ß√£o para os √≠ndices
 %       [A] = construa_matriz(@(i,j)(i),@(i,j)(i),4,7)
 %==========================================================================
-% Projeto Proae: ElaboraÁ„o de Material Did·tico que Empregue o uso de 
-%   Software como Suporte para o Aprendizado de ¡lgebra Linear.
+% Projeto Proae: Elabora√ß√£o de Material Did√°tico que Empregue o uso de 
+%   Software como Suporte para o Aprendizado de √Ålgebra Linear.
 % Membros do Projeto:
-%   MÙnica Aparecida Cruvinel Valad„o (Coordenadora)
-%   Douglas Frederico Guimar„es  Santiago (Vice-Coordenador)
+%   M√¥nica Aparecida Cruvinel Valad√£o (Coordenadora)
+%   Douglas Frederico Guimar√£es  Santiago (Vice-Coordenador)
 %   Anderson Luiz Pedrosa Porto (Colaborador)
 %   Flaviano Luiz Benfica (Bolsista)
 %==========================================================================
