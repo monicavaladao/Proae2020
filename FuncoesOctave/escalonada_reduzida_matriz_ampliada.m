@@ -1,20 +1,20 @@
 function [A,E] = escalonada_reduzida_matriz_ampliada(C,B)
-% ESCALONADA_REDUZIDA_MATRIZ_AMPLIADA: FunÁ„o que Retorna a matriza ampliada
+% ESCALONADA_REDUZIDA_MATRIZ_AMPLIADA: Fun√ß√£o que retorna a matriza ampliada
 % e a forma escalonada reduzida associada.
 % Entrada: 
 %   C: Matriz dos coeficientes de ordem mxn.
 %   B: Matriz dos termos independentes de ordem mx1.
-% SaÌda:
+% Sa√≠da:
 %   A: Matriz ampliada de ordem mx(n+1).
 %   E: Matriz na forma escalonada reduzida equivalente a A.
 % Exemplo:
 %   [A,E] = escalonada_reduzida_matriz_ampliada([3,2,-5;2,-4,-2;1,-2,-3],[8;-4;-4])
 %==========================================================================
-% Projeto Proae: ElaboraÁ„o de Material Did·tico que Empregue o uso de 
-%   Software como Suporte para o Aprendizado de ¡lgebra Linear.
+% Projeto Proae: Elabora√ß√£o de Material Did√°tico que Empregue o uso de 
+%   Software como Suporte para o Aprendizado de √Ålgebra Linear.
 % Membros do Projeto:
-%   MÙnica Aparecida Cruvinel Valad„o (Coordenadora)
-%   Douglas Frederico Guimar„es  Santiago (Vice-Coordenador)
+%   M√¥nica Aparecida Cruvinel Valad√£o (Coordenadora)
+%   Douglas Frederico Guimar√£es  Santiago (Vice-Coordenador)
 %   Anderson Luiz Pedrosa Porto (Colaborador)
 %   Flaviano Luiz Benfica (Bolsista)
 %==========================================================================
@@ -22,10 +22,10 @@ function [A,E] = escalonada_reduzida_matriz_ampliada(C,B)
 % Calcula a ordem da matriz C
 [m_C,n_C] = size(C);
 
-% Calcula a ordem da matriz I
+% Calcula a ordem da matriz B
 [m_B,n_B] = size(B);
 
-% Verifica se o n˙mero de colunas de C È igual ao n˙mero de linhas de B
+% Verifica se o n√∫mero de linhas de C √© igual ao n√∫mero de linhas de B
 if m_C == m_B
     % Identifica a matriz ampliada associadao ao sitema linear
     A = [C,B];
@@ -35,7 +35,7 @@ if m_C == m_B
     E = rref(A);  
     % Verifica se pode ter ocorrido erro com o uso de rref
     m_absE = rank(E);
-    % Verifica se o n˙mero de linhas de absE È diferente de pA
+    % Verifica se o n√∫mero de linhas de n√£o nulas de E √© diferente de pA
     if m_absE ~= pA
         fprintf('Possivel erro associado a tolerancia de rref()!\n');
         E = [];
