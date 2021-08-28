@@ -1,22 +1,20 @@
 function[R,B] = verifica_solucao_sistema_linear(C,B,X)
-% VERIFICA_SOLUCAO_SISTEMA_LINEAR: FunÁ„o que verifica se o S È soluÁ„o 
+% VERIFICA_SOLUCAO_SISTEMA_LINEAR: Fun√ß√£o que verifica se o S √© solu√ß√£o 
 % do sistema linear representado por AX = B
-% soluÁ„o. Retorna a soluÁ„o em caso afirmativo para sistema possÌvel e 
-% determinado. Retorna a matriz na forma escalonada reduzida associada ao
-% sistema linear em quest„o.
+% solu√ß√£o.
 % Entrada:
-%   C: Matriz dos coeficientes nxn.
+%   C: Matriz dos coeficientes mxn.
 %   B: Matriz dos termos indepentendes nx1.
 %   X: Matriz nx1
-% SaÌda:
+% Sa√≠da:
 %   R: Matriz resultante R = A.X.
 %   B: Matriz dos termos indepentendes nx1.
 %==========================================================================
-% Projeto Proae: ElaboraÁ„o de Material Did·tico que Empregue o uso de 
-%   Software como Suporte para o Aprendizado de ¡lgebra Linear.
+% Projeto Proae: Elabora√ß√£o de Material Did√°tico que Empregue o uso de 
+%   Software como Suporte para o Aprendizado de √Ålgebra Linear.
 % Membros do Projeto:
-%   MÙnica Aparecida Cruvinel Valad„o (Coordenadora)
-%   Douglas Frederico Guimar„es  Santiago (Vice-Coordenador)
+%   M√¥nica Aparecida Cruvinel Valad√£o (Coordenadora)
+%   Douglas Frederico Guimar√£es  Santiago (Vice-Coordenador)
 %   Anderson Luiz Pedrosa Porto (Colaborador)
 %   Flaviano Luiz Benfica (Bolsista)
 %==========================================================================
@@ -29,7 +27,7 @@ function[R,B] = verifica_solucao_sistema_linear(C,B,X)
 % Calcula a ordem da matriz X
 [m_X,n_X] = size(X);
 
-% Verifica se o produto AX est· definido
+% Verifica se o produto AX est√° definido
 if n_C == m_X
   R = C*X;
 else
