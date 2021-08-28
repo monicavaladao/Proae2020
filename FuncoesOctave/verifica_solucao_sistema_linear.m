@@ -31,7 +31,7 @@ function[R,B] = verifica_solucao_sistema_linear(C,B,X)
 if n_C == m_X
   R = C*X;
 else
-  fprintf('Verifique as ordens das matrizesn\n');
+  fprintf('Verifique as ordens das matrizes!!!\n');
   R = [];
 
 end
