@@ -28,7 +28,7 @@ if m == n
     % Retorna os coeficientes considerando o determinante de (A - autoval.*I)
     c = -c;
 else
-    fprintf('A matriz não é quadrada!!!');
+    fprintf('A matriz não é quadrada!!!\n');
     c = [];
 end
 
