@@ -1,21 +1,21 @@
 function [O] = verifica_autovalor_autovetor_matriz(A,lambda,v)
-% VERIFICA_AUTOVALOR_AUTOVETOR_MATRIZ: FunÁ„o que retorna a forma geral da matriz
+% VERIFICA_AUTOVALOR_AUTOVETOR_MATRIZ: Fun√ß√£o que retorna a forma geral da matriz
 % resultante do produto (A - lambda.*I).v.
 % Entrada:
 %   A: Matriz de ordem nxn.
 %   lambda: Escalar qualquer.
 %   v: Vetor nx1
-% SaÌda:
+% Sa√≠da:
 %   O: Matriz resultante do produto (A - lambda.*I).v.
 % Exemplo:
 %   [O] = verifica_autovalor_autovetor_matriz([-3,1,-1;-7,5,-1;-6,6,-2],-2,[-1;0;0])
 %
 %==========================================================================
-% Projeto Proae: ElaboraÁ„o de Material Did·tico que Empregue o uso de 
-%   Software como Suporte para o Aprendizado de ¡lgebra Linear.
+% Projeto Proae: Elabora√ß√£o de Material Did√°tico que Empregue o uso de 
+%   Software como Suporte para o Aprendizado de √Ålgebra Linear.
 % Membros do Projeto:
-%   MÙnica Aparecida Cruvinel Valad„o (Coordenadora)
-%   Douglas Frederico Guimar„es  Santiago (Vice-Coordenador)
+%   M√¥nica Aparecida Cruvinel Valad√£o (Coordenadora)
+%   Douglas Frederico Guimar√£es  Santiago (Vice-Coordenador)
 %   Anderson Luiz Pedrosa Porto (Colaborador)
 %   Flaviano Luiz Benfica (Bolsista)
 %==========================================================================
@@ -30,14 +30,14 @@ if m == n
     O = zeros(n,1);
     % Identifica a matriz (A - lambda.I)
     C = (A - lambda.*I);
-    % Verifica se v È n„o nulo
+    % Verifica se v √© n√£o nulo
     if all(v == 0)
-      fprintf('O vetor v n„o pode ser nulo \n');
+      fprintf('O vetor v n√£o pode ser nulo \n');
       O = [];
     else
       rC = rank(C);
       if (rC == m)
-        fprintf('lambda n„o È um autovalor de A \n');
+        fprintf('lambda n√£o √© um autovalor de A \n');
         O = [];
       else
         % Verifica ordem do vetor v       
@@ -52,7 +52,8 @@ if m == n
       end
     end
 else
-    fprintf('A matriz n„o È quadrada!!!');
+    fprintf('A matriz n√£o √© quadrada!!!\n');
+    O = [];
 end
 
 end
