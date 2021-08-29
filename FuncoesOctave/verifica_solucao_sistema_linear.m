@@ -4,7 +4,7 @@ function[R,B] = verifica_solucao_sistema_linear(C,B,X)
 % solução.
 % Entrada:
 %   C: Matriz dos coeficientes mxn.
-%   B: Matriz dos termos indepentendes nx1.
+%   B: Matriz dos termos indepentendes mx1.
 %   X: Matriz nx1
 % Saída:
 %   R: Matriz resultante R = A.X.
