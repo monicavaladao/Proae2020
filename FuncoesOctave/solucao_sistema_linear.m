@@ -45,14 +45,14 @@ if m_C == m_B
     % Verifica se o sitema possui solução
     if pA == pC
         if pA == n
-            fprintf('Sistema possui única solucao\n');
+            fprintf('Sistema possui única solução!\n');
             S = linsolve(C,B);
         else
-            fprintf('Sistema possui infinitas soluções\n');
+            fprintf('Sistema possui infinitas soluções!\n');
             S = [];
         end
     else
-        fprintf('Sistema não possui solução\n');
+        fprintf('Sistema não possui solução!\n');
         S = [];
     end
     % Encontra a forma escalonada reduzida associada a matriz A

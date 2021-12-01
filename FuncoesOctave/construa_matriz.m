@@ -1,5 +1,5 @@
 function [A] = construa_matriz(regra_ii,regra_ij,m,n)
-% CONSTRUA_MATRIz: Função que retorna a matriz A de ordem mxn
+% CONSTRUA_MATRIZ: Função que retorna a matriz A de ordem mxn
 % correspondente a definição fornecida pelas entradas da função.
 % Entrada:
 %   regra_ii: Regra associada a condição i=j, sendo que i,j representam,

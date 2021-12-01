@@ -1,5 +1,5 @@
 function[C] = produto_matriz_por_escalar(A,k)
-% PRODUTO_MATRZ_POR_ESCALAR: Função que retorna a matriz C = k.A.
+% PRODUTO_MATRIZ_POR_ESCALAR: Função que retorna a matriz C = k.A.
 % Entrada:
 %   A: Matriz A de ordem mxn.
 %   k: Escalar qualquer

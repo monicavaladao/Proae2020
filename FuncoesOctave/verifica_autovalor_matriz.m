@@ -1,6 +1,6 @@
 function [p] = verifica_autovalor_matriz(A,lambda)
 % VERIFICA_AUTOVALOR_MATRIZ: Função que retorna o valor p(lambda) onde p(.) é o
-% polinômio característico de A
+% polinômio caracterí­stico de A
 % Entrada:
 %   A: Matriz de ordem nxn.
 %   lambda: Escalar qualquer.
@@ -33,7 +33,7 @@ if m == n
     % Identifica a quantidade de coeficientes
     nc = length(c);
  
-    % Verifica se lambda é solução do polinômio característico
+    % Verifica se lambda é solução do polinômio caracterí­stico
     xlambda = lambda*ones(1,(nc-1));
     e = [1:(nc-1)];
     [ex,~] = sort(e,'descend');
@@ -41,7 +41,7 @@ if m == n
     xlambda_ex = xlambda_ex(:);
     p = (c(1:(nc - 1)))'*xlambda_ex + c(nc);
 else
-    fprintf('A matriz não é quadrada!!!');
+    fprintf('A matriz não é quadrada!!!\n');
     p = [];
 end
 

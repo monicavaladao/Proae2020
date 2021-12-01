@@ -1,9 +1,9 @@
 function [c] = coeficientes_polinomio_caracteristico(A)
-%COEFICIENTES_POLINÔMIO_CARACTERISTICO: Função que retorna os coeficientes
+%COEFICIENTES_POLINOMIO_CARACTERISTICO: Função que retorna os coeficientes
 %do polinômio característico associado a matriz A.
 % Entrada:
 %   A: Matriz A de ordem nxn
-% Saída:
+% Saí­da:
 %   c: Vetor de ordem (n+1)x1 que contém os coeficientes do polinômio
 %       característico. Os elementos em c estão associados ordenadamente
 %       aos termos de maior grau para o termo de menor grau do polinômio.
@@ -28,7 +28,7 @@ if m == n
     % Retorna os coeficientes considerando o determinante de (A - autoval.*I)
     c = -c;
 else
-    fprintf('A matriz não é quadrada!!!');
+    fprintf('A matriz não é quadrada!!!\n');
     c = [];
 end
 

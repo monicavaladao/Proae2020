@@ -5,7 +5,7 @@ function [O] = verifica_autovalor_autovetor_matriz(A,lambda,v)
 %   A: Matriz de ordem nxn.
 %   lambda: Escalar qualquer.
 %   v: Vetor nx1
-% Saída:
+% Saí­da:
 %   O: Matriz resultante do produto (A - lambda.*I).v.
 % Exemplo:
 %   [O] = verifica_autovalor_autovetor_matriz([-3,1,-1;-7,5,-1;-6,6,-2],-2,[-1;0;0])
@@ -52,7 +52,8 @@ if m == n
       end
     end
 else
-    fprintf('A matriz não é quadrada!!!');
+    fprintf('A matriz não é quadrada!!!\n');
+    O = [];
 end
 
 end

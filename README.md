@@ -1,2 +1,2 @@
 # Proae2020
-Projeto Proae: Elabora√ß√£o de Material Did√°tico que Empregue o uso de Software como Suporte para o Aprendizado de √Ålgebra Linear
+Projeto Proae: ElaboraÁ„o de Material Did·tico que Empregue o uso de Software como Suporte para o Aprendizado de ¡lgebra Linear.

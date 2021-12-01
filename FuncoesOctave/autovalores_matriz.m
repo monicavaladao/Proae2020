@@ -11,7 +11,7 @@ function [autoval] = autovalores_matriz(A)
 %   Software como Suporte para o Aprendizado de Álgebra Linear.
 % Membros do Projeto:
 %   Mônica Aparecida Cruvinel Valadão (Coordenadora)
-%   Douglas Frederico Guimarães  Santiago (Vice-Coordenador)
+%   Douglas Frederico Guimarães Santiago (Vice-Coordenador)
 %   Anderson Luiz Pedrosa Porto (Colaborador)
 %   Flaviano Luiz Benfica (Bolsista)
 %==========================================================================
@@ -23,7 +23,7 @@ if m == n
     % Calcula os autovalores da matriz A
     autoval = eig(A);
 else
-    fprintf('A matriz não é quadrada!!!');
+    fprintf('A matriz não é quadrada!!!\n');
     autoval = [];
 end
 

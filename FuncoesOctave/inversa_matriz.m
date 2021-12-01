@@ -58,7 +58,7 @@ if m == n
 %    end
 
 else
-    fprintf('A matriz não é quadrada!!!');
+    fprintf('A matriz não é quadrada!!!\n');
     detA = [];
     invA = [];
 end
